@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav ul li a:hover {
+    color: #3498db;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service {
+    flex: 1;
+    min-width: 250px;
+    background-color: lightblue;
+    padding: 30px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ddd;
+}
+
+.testimonials h2 {
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #444;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+/* Media Queries cho Mobile */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .services, .testimonials {
+        padding: 40px 20px;
+    }
+}
